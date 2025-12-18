@@ -13,8 +13,10 @@ class Solution(object):
             #if it is a closing bracket, check that the top of the stack is the 
             #matching opening bracket and pop it, continuing to the next letter
             else:
+                #if closing bracket with no open bracket, invalid input
                 if not chars_stack:
                     return False
+                #check that current char in string is matching closing for the top of the stack
                 current_open = chars_stack.pop()
                 if current_open=="(" and letter==")":
                     continue
