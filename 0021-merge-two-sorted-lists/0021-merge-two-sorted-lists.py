@@ -29,6 +29,3 @@ class Solution(object):
             new_list.next=list2
         return start.next
 
-
-        #if head(list1) <head(list2):
-        #append head(list1) node to head of new linked list, update next node in list1 to be the new head in list1
